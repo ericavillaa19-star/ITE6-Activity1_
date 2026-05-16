@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Burger",
+    "price": 120,
+    "category": "Fast Food",
+    "image": "/images/Burger.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pizza",
+    "price": 250,
+    "category": "Fast Food",
+    "image": "/images/Pizza.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Spaghetti",
+    "price": 180,
+    "category": "Pasta",
+    "image": "/images/Spaghetti.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Fried Chicken",
+    "price": 150,
+    "category": "Main Dish",
+    "image": "/images/Chicken.jpg"
+  },
+  {
+    "id": 5,
+    "name": "French Fries",
+    "price": 80,
+    "category": "Fast Food",
+    "image": "/images/Fries.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Coke",
+    "price": 35,
+    "category": "Drinks",
+    "image": "/images/Coke.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Burger Steak",
+    "price": 120,
+    "category": "Fast Food",
+    "image": "/images/Steak.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Hot Fudge Sundae",
+    "price": 60,
+    "category": "Dessert",
+    "image": "/images/Sundae.jpg"
+  }
+]

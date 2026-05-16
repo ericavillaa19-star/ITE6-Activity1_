@@ -1,0 +1,75 @@
+.activity1 {
+  margin: 0;
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Container */
+.activity1 .container {
+  text-align: center;
+  padding: 100px 20px 50px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Header */
+.activity1 header {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.activity1 header h1 {
+  font-size: 3rem;
+  color: #58a6ff;
+  margin: 0;
+}
+
+.activity1 .subtitle {
+  color: #248ae3;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+/* Row layout */
+.activity1 .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card styles */
+.activity1 .card {
+  background: #161b22;
+  padding: 25px 20px;
+  border-radius: 15px;
+  border: 1px solid #30363d;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 220px;
+}
+
+.activity1 .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(88, 166, 255, 0.5);
+  border: 1px solid #58a6ff;
+}
+
+.activity1 .card h2 {
+  color: #58a6ff;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.activity1 .card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.activity1 .card span {
+  font-weight: 600;
+  color: #8b949e;
+}

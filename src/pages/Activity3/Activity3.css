@@ -1,0 +1,77 @@
+.activity3 {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Subtitle */
+.activity3 .subtitle {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* GRID like fast food menu */
+.activity3 .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Food card */
+.activity3 .menu-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.activity3 .menu-card:hover {
+  transform: scale(1.03);
+}
+
+/* Image */
+.activity3 .menu-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Info section */
+.activity3 .menu-info {
+  padding: 10px;
+}
+
+.activity3 .desc {
+  font-size: 12px;
+  color: gray;
+}
+
+.activity3 .price {
+  font-weight: bold;
+  color: green;
+  margin: 5px 0;
+}
+
+/* Order button */
+.activity3 .order-btn {
+  background: #e60012;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.activity3 .order-btn:hover {
+  background: #c4000f;
+}
+
+/* Navigation */
+.activity3 .nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

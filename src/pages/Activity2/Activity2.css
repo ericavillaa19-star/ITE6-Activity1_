@@ -1,0 +1,57 @@
+.activity2 {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.activity2 .activity2-container {
+    text-align: center;
+    background: #161b22;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* Title */
+.activity2 h1 {
+    margin-bottom: 20px;
+}
+
+/* Input */
+.activity2 input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.activity2 button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #238636;
+    color: white;
+}
+
+.activity2 button:hover {
+    background: #2ea043;
+}
+
+/* Reset button */
+.activity2 .reset {
+    background: #da3633;
+}
+
+.activity2 .reset:hover {
+    background: #f85149;
+}
