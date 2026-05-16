@@ -73,3 +73,11 @@
   font-weight: 600;
   color: #8b949e;
 }
+
+.button-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}

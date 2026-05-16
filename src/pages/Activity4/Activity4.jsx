@@ -7,7 +7,6 @@ import './Activity4.css';
 import { Link } from "react-router-dom";
 
 const Activity4 = () => {
-  // ✅ Credentials INSIDE component
   const IMGFLIP_USERNAME = 'GoodnessGracious';
   const IMGFLIP_PASSWORD = 'goodnessgracious';
 
@@ -20,7 +19,6 @@ const Activity4 = () => {
   const [memesLoading, setMemesLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch meme templates on component mount
   useEffect(() => {
     fetchMemeTemplates();
   }, []);
@@ -31,7 +29,7 @@ const Activity4 = () => {
       setError(null);
       const response = await fetch('https://api.imgflip.com/get_memes');
       const data = await response.json();
-      
+
       if (data.success) {
         setMemes(data.data.memes);
         if (data.data.memes.length > 0) {
@@ -41,7 +39,7 @@ const Activity4 = () => {
         setError('Failed to fetch meme templates');
       }
     } catch (err) {
-      setError('Error fetching meme templates: ' + err.message);
+      setError('Error: ' + err.message);
     } finally {
       setMemesLoading(false);
     }
@@ -49,7 +47,7 @@ const Activity4 = () => {
 
   const handleGenerateMeme = async () => {
     if (!selectedMeme || !topText || !bottomText) {
-      setError('Please select a meme and enter both top and bottom text');
+      setError('Fill all fields!');
       return;
     }
 
@@ -67,10 +65,7 @@ const Activity4 = () => {
 
       const response = await fetch('https://api.imgflip.com/caption_image', {
         method: 'POST',
-        body: params,
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        }
+        body: params
       });
 
       const data = await response.json();
@@ -78,10 +73,10 @@ const Activity4 = () => {
       if (data.success) {
         setGeneratedMeme(data.data.url);
       } else {
-        setError('Failed to generate meme: ' + data.error_message);
+        setError(data.error_message);
       }
     } catch (err) {
-      setError('Error generating meme: ' + err.message);
+      setError(err.message);
     } finally {
       setLoading(false);
     }
@@ -96,16 +91,20 @@ const Activity4 = () => {
 
   return (
     <div className="activity4-container">
-      <h1 className="title">Meme Generator</h1>
-      
+      <h1 className="title">⚡ Meme Generator</h1>
+
       {error && <div className="error-message">{error}</div>}
 
       {memesLoading ? (
-        <Loader />
+        <div className="center-loader">
+          <Loader />
+        </div>
       ) : (
         <div className="content-wrapper">
+
+          {/* LEFT SIDE */}
           <div className="form-section">
-            <MemeSelector 
+            <MemeSelector
               memes={memes}
               selectedMeme={selectedMeme}
               onMemeChange={setSelectedMeme}
@@ -122,24 +121,29 @@ const Activity4 = () => {
             />
           </div>
 
+          {/* RIGHT SIDE */}
           <div className="display-section">
             {loading ? (
-              <Loader />
+              <div className="center-loader">
+                <Loader />
+              </div>
             ) : generatedMeme ? (
               <MemeDisplay memeUrl={generatedMeme} />
             ) : (
               <div className="placeholder">
-                <p>Your generated meme will appear here</p>
+                <p>Your meme will appear here</p>
               </div>
             )}
           </div>
+
         </div>
       )}
-        <div className="nav-buttons">
+
+      <div className="nav-buttons">
         <Link to="/activity3">
           <button className="back-btn">← Back</button>
         </Link>
-    </div>
+      </div>
     </div>
   );
 };

@@ -69,10 +69,15 @@ function Activity1() {
             </div>
           ))}
         </div>
+        <div className="button-group">
+          <Link to="/activity2">
+            <button>Play Guess Game</button>
+          </Link>
 
-        <Link to="/activity2">
-          <button>Play Guess Game</button>
-        </Link>
+          <Link to="/">
+            <button className="back-btn">⬅ Back to Home</button>
+          </Link>
+        </div>
 
       </div>
     </div>
