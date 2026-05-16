@@ -4,6 +4,7 @@ import MemeForm from './components/MemeForm';
 import MemeDisplay from './components/MemeDisplay';
 import Loader from './components/Loader';
 import './Activity4.css';
+import { Link } from "react-router-dom";
 
 const Activity4 = () => {
   // ✅ Credentials INSIDE component
@@ -134,6 +135,11 @@ const Activity4 = () => {
           </div>
         </div>
       )}
+        <div className="nav-buttons">
+        <Link to="/activity3">
+          <button className="back-btn">← Back</button>
+        </Link>
+    </div>
     </div>
   );
 };

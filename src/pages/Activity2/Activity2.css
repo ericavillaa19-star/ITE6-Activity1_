@@ -55,3 +55,15 @@
 .activity2 .reset:hover {
     background: #f85149;
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-btn {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+}

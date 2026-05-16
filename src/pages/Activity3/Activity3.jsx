@@ -80,15 +80,14 @@ function Activity3() {
 
         {/* Navigation button to go back to Activity2 */}
         <div className="nav-buttons">
-          <Link to="/activity2">
-            <button>⬅ Back</button>
-          </Link>
-        </div>
-
-        <Link to="/activity4">
+         <Link to="/activity4">
           <button className="next-btn">Next Activity ➜</button>
         </Link>
-
+        
+        </div>
+           <Link to="/activity2">
+            <button>⬅ Back</button>
+          </Link>
       </div>
     </div>
   );

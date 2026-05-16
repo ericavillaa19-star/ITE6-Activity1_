@@ -307,3 +307,17 @@
     font-size: 0.9rem;
   }
 }
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

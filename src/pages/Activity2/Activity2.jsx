@@ -83,6 +83,11 @@ function Activity2() {
           <button className="next-btn">Next Activity ➜</button>
         </Link>
 
+        <div className="button-group">
+          <Link to="/activity1">
+            <button className="back-btn">← Back</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
